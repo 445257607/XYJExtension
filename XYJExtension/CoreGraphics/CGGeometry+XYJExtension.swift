@@ -9,7 +9,7 @@ import CoreGraphics
 
 
 extension CGSize: XYJExtensionWrappable {}
-extension XYJExtension where T == CGSize {
+public extension XYJExtension where T == CGSize {
     
     /// 面积
     var area: CGFloat {
@@ -20,7 +20,7 @@ extension XYJExtension where T == CGSize {
 
 
 extension CGRect: XYJExtensionWrappable {}
-extension XYJExtension where T == CGRect {
+public extension XYJExtension where T == CGRect {
     
     /// 面积
     var area: CGFloat {
