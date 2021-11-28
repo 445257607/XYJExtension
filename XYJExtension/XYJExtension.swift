@@ -16,8 +16,8 @@ public protocol XYJExtensionWrappable {
 
 
 public struct XYJExtension<T>: XYJExtensionWrappable {
-    let object: T
-    internal init(object: T) {
+    public let object: T
+    public init(object: T) {
         self.object = object
     }
 }
