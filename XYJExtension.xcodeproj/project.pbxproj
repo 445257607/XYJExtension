@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C421B012753C5AD00D49EE4 /* XYJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C421B002753C5AD00D49EE4 /* XYJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C421B082753C79400D49EE4 /* XYJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B072753C79400D49EE4 /* XYJExtension.swift */; };
+		4C421B0D2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B0C2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift */; };
+		4C421B0F2753CC6800D49EE4 /* Timer+XYJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B0E2753CC6800D49EE4 /* Timer+XYJExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C421AFD2753C5AD00D49EE4 /* XYJExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XYJExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C421B002753C5AD00D49EE4 /* XYJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYJExtension.h; sourceTree = "<group>"; };
+		4C421B072753C79400D49EE4 /* XYJExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYJExtension.swift; sourceTree = "<group>"; };
+		4C421B0C2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGGeometry+XYJExtension.swift"; sourceTree = "<group>"; };
+		4C421B0E2753CC6800D49EE4 /* Timer+XYJExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+XYJExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,9 +49,35 @@
 		4C421AFF2753C5AD00D49EE4 /* XYJExtension */ = {
 			isa = PBXGroup;
 			children = (
-				4C421B002753C5AD00D49EE4 /* XYJExtension.h */,
+				4C421B0B2753C93700D49EE4 /* CoreGraphics */,
+				4C421B0A2753C8B000D49EE4 /* Foundation */,
+				4C421B092753C8A700D49EE4 /* UIKit */,
+				4C421B072753C79400D49EE4 /* XYJExtension.swift */,
 			);
 			path = XYJExtension;
+			sourceTree = "<group>";
+		};
+		4C421B092753C8A700D49EE4 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4C421B0A2753C8B000D49EE4 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				4C421B0E2753CC6800D49EE4 /* Timer+XYJExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		4C421B0B2753C93700D49EE4 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				4C421B0C2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift */,
+			);
+			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,7 +87,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C421B012753C5AD00D49EE4 /* XYJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +122,7 @@
 				TargetAttributes = {
 					4C421AFC2753C5AD00D49EE4 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -129,6 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C421B082753C79400D49EE4 /* XYJExtension.swift in Sources */,
+				4C421B0D2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift in Sources */,
+				4C421B0F2753CC6800D49EE4 /* Timer+XYJExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +293,7 @@
 		4C421B052753C5AD00D49EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -281,6 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +324,7 @@
 		4C421B062753C5AD00D49EE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
