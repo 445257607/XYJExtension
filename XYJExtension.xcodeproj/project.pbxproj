@@ -15,6 +15,8 @@
 		4C421B152753E2FA00D49EE4 /* XYJNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B142753E2FA00D49EE4 /* XYJNavigationController.swift */; };
 		4C421B172753E31300D49EE4 /* XYJTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B162753E31300D49EE4 /* XYJTabBarController.swift */; };
 		4C421B192753E5A100D49EE4 /* XYJLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B182753E5A100D49EE4 /* XYJLayout.swift */; };
+		4C421B1B2753E69C00D49EE4 /* XYJLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B1A2753E69C00D49EE4 /* XYJLayoutController.swift */; };
+		4C421B1D2753E9C300D49EE4 /* UIGeometry+XYJExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C421B1C2753E9C300D49EE4 /* UIGeometry+XYJExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		4C421B142753E2FA00D49EE4 /* XYJNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYJNavigationController.swift; sourceTree = "<group>"; };
 		4C421B162753E31300D49EE4 /* XYJTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYJTabBarController.swift; sourceTree = "<group>"; };
 		4C421B182753E5A100D49EE4 /* XYJLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYJLayout.swift; sourceTree = "<group>"; };
+		4C421B1A2753E69C00D49EE4 /* XYJLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYJLayoutController.swift; sourceTree = "<group>"; };
+		4C421B1C2753E9C300D49EE4 /* UIGeometry+XYJExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGeometry+XYJExtension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,10 @@
 		4C421AFF2753C5AD00D49EE4 /* XYJExtension */ = {
 			isa = PBXGroup;
 			children = (
+				4C421B1E2753EAEF00D49EE4 /* XYJKit */,
+				4C421B092753C8A700D49EE4 /* UIKit */,
 				4C421B0B2753C93700D49EE4 /* CoreGraphics */,
 				4C421B0A2753C8B000D49EE4 /* Foundation */,
-				4C421B092753C8A700D49EE4 /* UIKit */,
 				4C421B072753C79400D49EE4 /* XYJExtension.swift */,
 			);
 			path = XYJExtension;
@@ -70,11 +75,7 @@
 		4C421B092753C8A700D49EE4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4C421B102753E25D00D49EE4 /* XYJView.swift */,
-				4C421B182753E5A100D49EE4 /* XYJLayout.swift */,
-				4C421B122753E28400D49EE4 /* XYJViewController.swift */,
-				4C421B142753E2FA00D49EE4 /* XYJNavigationController.swift */,
-				4C421B162753E31300D49EE4 /* XYJTabBarController.swift */,
+				4C421B1C2753E9C300D49EE4 /* UIGeometry+XYJExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -93,6 +94,19 @@
 				4C421B0C2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift */,
 			);
 			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		4C421B1E2753EAEF00D49EE4 /* XYJKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C421B102753E25D00D49EE4 /* XYJView.swift */,
+				4C421B182753E5A100D49EE4 /* XYJLayout.swift */,
+				4C421B122753E28400D49EE4 /* XYJViewController.swift */,
+				4C421B1A2753E69C00D49EE4 /* XYJLayoutController.swift */,
+				4C421B142753E2FA00D49EE4 /* XYJNavigationController.swift */,
+				4C421B162753E31300D49EE4 /* XYJTabBarController.swift */,
+			);
+			path = XYJKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +193,9 @@
 				4C421B132753E28400D49EE4 /* XYJViewController.swift in Sources */,
 				4C421B192753E5A100D49EE4 /* XYJLayout.swift in Sources */,
 				4C421B0D2753CA1E00D49EE4 /* CGGeometry+XYJExtension.swift in Sources */,
+				4C421B1B2753E69C00D49EE4 /* XYJLayoutController.swift in Sources */,
 				4C421B152753E2FA00D49EE4 /* XYJNavigationController.swift in Sources */,
+				4C421B1D2753E9C300D49EE4 /* UIGeometry+XYJExtension.swift in Sources */,
 				4C421B112753E25D00D49EE4 /* XYJView.swift in Sources */,
 				4C421B0F2753CC6800D49EE4 /* Timer+XYJExtension.swift in Sources */,
 			);
