@@ -14,12 +14,8 @@ public extension XYJExtension where T: CGColor {
         if #available(iOS 13.0, *) {
             return .init(red: r, green: g, blue: b, alpha: a)
         } else {
-            if #available(iOS 9.0, *) {
-                guard let colorSpace = CGColorSpace(name: CGColorSpace.sRGB) else { return nil }
-                return .init(colorSpace: colorSpace, components: [r, g, b, a])
-            } else {
-                return nil
-            }
+            guard let colorSpace = CGColorSpace(name: CGColorSpace.sRGB) else { return nil }
+            return .init(colorSpace: colorSpace, components: [r, g, b, a])
         }
     }
     
